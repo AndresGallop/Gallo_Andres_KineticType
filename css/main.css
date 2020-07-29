@@ -1,0 +1,328 @@
+/* quick reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.hidden { display: none; }
+
+body {
+  background-color: #C8E0F4;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #BA1200;
+  height: 65px;
+}
+
+#title{
+  margin-right: auto;
+  margin-left: 70px;
+  color: white;
+}
+
+.leftinfo{
+  background-color: #EFF9F0;
+  position: absolute;
+  margin: 75px 50px;
+  padding: 10px;
+  width: 250px;
+  height: 530px;
+}
+
+.rightinfo{
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF9F0;
+  position:absolute;
+  margin-left: auto;
+  padding: 10px;
+  top: 145px;
+  left: 1100px;
+  right: 50px;
+  width: 250px;
+  height: 530px;
+}
+
+p{
+  text-align: inherit;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.6
+}
+
+.link{
+  font-size: 12px;
+}
+
+.subti{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.colour{
+  width: 40px;
+  height: 30px;
+  background-color: black;
+  margin: auto;
+  padding: 10px;
+  border: white solid 4px;
+}
+
+.one{
+  background-color: red;
+}
+
+.three{
+  background-color: grey;
+}
+
+.menuNav ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 150px;
+  margin-right: 70px;
+}
+
+.menuNav ul a{
+  background-color:  #BA1200;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menuNav ul a:hover, a:active {
+  background-color: #508AA8;
+}
+
+
+.type { margin-top: 12px; }
+
+.type-wrapper {
+  width: 530px;
+  border: 3px solid black;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+
+svg { width: 100%; }
+
+.project-header { margin: 30px 0 10px; font-size: 2em; }
+
+.project-header, .project-subhead { text-align: center; }
+
+.controls { text-align: center; }
+.controls button {
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 1.5em;
+  border-radius: 1em;
+  background-color:  #BA1200;
+  color: white;
+}
+
+#typelayout path { opacity: 0; }
+
+/* #you, #wanna, #play, #rough, #ok, #say, #hello, #to, #my, #little, #friend { animation: fadewords 0.2s forwards; } */
+
+.text-anim { animation: fadewords 0.5s forwards; }
+
+
+
+/*three*/.container-turn { animation: onefocus 0.2s linear 0.3s forwards, twofocus 0.2s linear 1.3s forwards, threeturn 0.2s linear 3s forwards, fourturn 0.2s linear 5.3s forwards, fivefocus 0.2s linear 7.8s forwards,  sixfocus 0.2s linear 8.3s forwards, sevenfocus 0.2s linear 9.3s forwards, eightfocus 0.2s linear 11s forwards, nineturn 0.2s linear 13.8s forwards, tenturn 0.2s linear 17.7s forwards, elevenfocus 0.2s linear 19.7s forwards, twelvesturn 0.2s linear 23.7s forwards, twelveturn 0.2s linear 26.9s forwards, thirteenfocus 1.5s ease-in-out 29.5s forwards, fourteenfocus 0.2s linear 31.5s forwards, sixteenturn 0.2s linear 32.6s forwards, seventeenfocus 0.2s linear 34.7s forwards, nineteenfocus 0.2s linear 38.4s forwards, twentyfocus 0.2s linear 39s forwards, twentyonefocus 2s ease-in-out 40.2s forwards, twentytwofocus 0.2s linear 42.7s forwards, resetcontainer 2s linear 44s forwards; }
+                                        /*duration*/ /*moment*/
+.container-turn2 { animation: turncontainer 0.2s linear 0.5s forwards, turnagain 0.3s linear 1s forwards, resetcontainer 1s linear 4s forwards; }
+.zoom-tony { animation: zoomtony 2.5s forwards; }
+
+#one { animation-delay: 0.5s; }/*Let me tell you something */
+#two { animation-delay: 1.5s; }/*you already know.*/
+#three { animation-delay: 3s; }/*The world ain't all sunshine and rainbows*/
+#four { animation-delay: 5.5s; }/*It's a very mean and nasty place*/
+#five { animation-delay: 8s;}/*and I don't care how*/
+#six { animation-delay: 8.5s; }/*tough you are*/
+#arm { animation-delay: 8.7s; }
+#seven { animation-delay: 9.5s; }/*it will beat you to your knees*/
+#eight { animation-delay: 11.3s; }/*and keep you there permanently if you let it*/
+#nine { animation-delay: 14s; }/*You, me, or nobody is gonna hit as hard as life*/
+#ten { animation-delay: 18s; }/*But it ain't about how hard ya hit*/
+#eleven { animation-delay: 20s; }/*It's about how hard you can get it and keep moving forward*/
+#twelves { animation-delay: 24s; }/*How much you can take and keep moving forward*/
+#twelve { animation-delay: 27.2s; }/*That's how winning is done!*/
+#thirteen { animation-delay:30s; }/*Now if you know what you're worth*/
+#fourteen { animation-delay:31.8s; }/*then go out and get what you're worth*/
+#sixteen { animation-delay: 32.5s; }/*But ya gotta be willing to take the hits*/
+#seventeen { animation-delay: 35s; }/*and not pointing fingers saying you ain't where you wanna be because of*/
+#eighteen { animation-delay:38s ; }/*him*/
+#nineteen { animation-delay: 38.7s; }/*or her*/
+#twenty { animation-delay: 39.3s; }/*or anybody!*/
+#twentyone { animation-delay: 40.5s; }/*Cowards do that and that ain't you!*/
+#twentytwo { animation-delay: 43s; }/* You're better than that!*/
+#twentythree { animation-delay: 43.2s; }/* You're better than that!*/
+
+/* #layout {
+  animation: turncontainer 0.2s linear 1s forwards, turnagain 0.3s linear 1.5s forwards;
+  /* animation-delay: 1s;
+} */
+
+.tony-vector {
+  position: absolute;
+  top: 139px;
+  left: 255px;
+  height: 300px;
+
+  opacity: 0;
+
+  animation-delay: 2s;
+}
+
+@keyframes fadewords {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes onefocus {
+  100% {
+    transform: scale(2.6) translate(-2.5%, 0%);
+  }
+}
+
+@keyframes twofocus {
+  100% {
+    transform: scale(3.8) translate(-3%, 0%);
+  }
+}
+
+@keyframes threeturn {
+  100% {
+    transform: rotate(-90deg) scale(1.3) translate(-40%, -10%);
+  }
+}
+
+@keyframes fourturn {
+  100% {
+    transform: rotate(0deg) scale(3.8) translate(-8%, -15%);
+  }
+}
+
+@keyframes fivefocus {
+  100% {
+    transform: scale(3.5) translate(-25.7%, -13%);
+  }
+}
+
+@keyframes sixfocus {
+  100% {
+    transform: scale(3.5) translate(-38%, -13%);
+  }
+}
+
+@keyframes sevenfocus {
+  100% {
+    transform: scale(2.3) translate(-7%, -42%);
+  }
+}
+
+@keyframes eightfocus {
+  100% {
+    transform: scale(3.5) translate(-7%, -42%);
+  }
+}
+
+@keyframes nineturn {
+  100% {
+    transform: rotate(-90deg) scale(3.5) translate(-25%, -60%);
+  }
+}
+
+@keyframes tenturn {
+  100% {
+    transform: rotate(0deg) scale(3.2) translate(-12.5%, -80%);
+  }
+}
+
+@keyframes elevenfocus {
+  100% {
+    transform: rotate(0deg) scale(2.3) translate(-0.5%, -80%);
+  }
+}
+
+@keyframes twelvesturn {
+  100% {
+    transform: rotate(90deg) scale(4) translate(-20%, -80%);
+  }
+}
+
+@keyframes twelveturn {
+  100% {
+    transform: rotate(0deg) scale(3.5) translate(-30.5%, -55%);
+  }
+}
+
+@keyframes thirteenfocus {
+  0% {
+    transform: rotate(0deg) scale(4.5) translate(-46%, -55%);
+  }
+  100% {
+    transform: rotate(0deg) scale(4.5) translate(-75%, -55%);
+  }
+}
+
+@keyframes fourteenfocus {
+  100% {
+    transform: rotate(0deg) scale(2) translate(-50%, -55%);
+  }
+}
+
+@keyframes sixteenturn {
+  100% {
+    transform: rotate(90deg) scale(4.5) translate(-50%, -56%);
+  }
+}
+
+@keyframes seventeenfocus {
+  100% {
+    transform: rotate(90deg) scale(2.9) translate(-50%, -35%);
+  }
+}
+
+@keyframes twentyfocus {
+  100% {
+    transform: rotate(90deg) scale(4.5) translate(-65%, -56%);
+  }
+}
+
+@keyframes twentyonefocus {
+  0% {
+    transform: rotate(90deg) scale(4.5) translate(-75%, -56%);
+  }
+  100% {
+    transform: rotate(90deg) scale(4.5) translate(-75%, -20%);
+  }
+}
+
+@keyframes twentytwofocus {
+  100% {
+    transform: rotate(90deg) scale(1.8) translate(-88%, -56%);
+  }
+}
+
+@keyframes resetcontainer {
+  0% { transform: rotate(0deg) scale(4) translate(-45%, -19%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
